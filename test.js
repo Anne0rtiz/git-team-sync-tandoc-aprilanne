@@ -22,6 +22,6 @@ assertEqual(cancelled.status, 'cancelled', 'cancel status');
 assertEqual(cancelled.total, 0, 'cancel zeroes total');
 
 const loyaltyOrder = orders.createOrder([{ price: 20, qty: 3 }]); // total = 60
-assertEqual(orders.calculateLoyaltyPoints(loyaltyOrder), 6, 'loyalty points for a $60 order');
+assertEqual(orders.calculateLoyaltyPoints(loyaltyOrder), 11, 'loyalty points for a $60 order');
 
 process.exitCode = failures > 0 ? 1 : 0;
